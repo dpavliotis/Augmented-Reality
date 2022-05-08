@@ -11,15 +11,16 @@
     <!-- speech command component -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
     <script src="build/aframe-speech-command-component.js"></script> 
-    
+     <body style="margin : 0px; overflow: hidden;">
+     <a-scene  vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" 
+     embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
 
-    <body style="margin : 0px; overflow: hidden;">
-
-        <a-scene  vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"  embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
-
-            <a-entity id="annyang" annyang-speech-recognition></a-entity>
-
-            <a-entity id="switch" 
+    1st derivelable  
+            
+            
+            
+         <a-entity id="annyang" annyang-speech-recognition></a-entity>
+         <a-entity id="switch" 
                 speech-command__start="command: start; type: attribute; attribute: visible; targetElement: snow; value: true;"
                 speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
             </a-entity>
@@ -32,6 +33,45 @@
             </a-marker>
 
             <a-entity camera></a-entity>
+         
+         
+     2nd deliverable
+     
+               <a-marker id="marker1" type='pattern' url="./assets/dpsd.patt">
+               <a-text value="      " positions="1 2 0 "></a-text>
+               <a-image src="       " positions="0 1 0" rotate="180"></a-image>
+               </a-marker>
+               
+               <a-marker id="markerO" type='pattern' url="./assets/pattern-card-O.patt">
+               <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" position="0 0 0" 
+               gltf-model="#cat"
+               material="color: blue" animation__rotate = "property: rotation; dur: 5000; 
+               easing: linear;
+               dir: normal;
+               from:0 0 0; to: 0 360 0; 
+               loop: true;" 
+                         
+                         ></a-entity>
+               </a-marker> 
+
+               <a-marker id="markerH" type='pattern' url="./assets/pattern-card-H.patt">
+                <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" position="0 0 0"  
+               material="color: gold" animation__rotate = "property: rotation;
+               dur: 5000; 
+               easing: linear; 
+               dir: normal; 
+               from:0 0 0; to: 0 360 0; 
+               loop: true;" ></a-entity>
+                
+         </a-marker> 
+
+
+
+                
+
+
+<a-entity camera></a-entity>
+</a-scene>
 
         </a-scene>
     </body>
