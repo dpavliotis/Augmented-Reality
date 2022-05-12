@@ -37,35 +37,29 @@
          
      2nd deliverable
      
-               <a-marker id="marker1" type='pattern' url="./assets/dpsd.patt">
-               <a-text value="      " positions="1 2 0 "></a-text>
-               <a-image src="       " positions="0 1 0" rotate="180"></a-image>
-               </a-marker>
-               
-               <a-marker id="markerO" type='pattern' url="./assets/pattern-card-O.patt">
-               <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" position="0 0 0" 
-               gltf-model="#cat"
-               material="color: blue" animation__rotate = "property: rotation; dur: 5000; 
-               easing: linear;
-               dir: normal;
-               from:0 0 0; to: 0 360 0; 
-               loop: true;" 
-                         
-                         ></a-entity>
-               </a-marker> 
+               <!-- dpsd profile-->
+                    <a-marker preset="dpsdmarker" type="pattern" url="./assets/pattern-dpsdmarker.patt">
+                    <a-image src="        " positions="0 1 0" rotation="0 180 0"></a-image>
+                    <a-text value="       " positions="1 2 0 "></a-text>
+                    </a-marker>
 
-               <a-marker id="markerH" type='pattern' url="./assets/pattern-card-H.patt">
-                <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" position="0 0 0"  
-               material="color: gold" animation__rotate = "property: rotation;
-               dur: 5000; 
-               easing: linear; 
-               dir: normal; 
-               from:0 0 0; to: 0 360 0; 
-               loop: true;" ></a-entity>
-                
-         </a-marker> 
+                    <!-- oxygrEn -->
+                    <a-marker id="markerO" type='pattern' url="./assets/pattern-card-O.patt">
+                    <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" 
+                              position="0 0 0" 
+                              material="color: blue" 
+                              animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
+                    </a-entity>
+                    </a-marker> 
 
-
+                    <!-- hydrogEn -->
+                    <a-marker id="markerH" type='pattern' url="./assets/hydrogen.patt">
+                    <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5"
+                              position="0 0 0"  
+                              material="color: gold" 
+                              animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
+                    </a-entity>
+                    </a-marker> 
 
                 
 
