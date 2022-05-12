@@ -37,28 +37,23 @@
          
      2nd deliverable
      
-               <!-- dpsd profile-->
-                    <a-marker preset="dpsdmarker" type="pattern" url="./assets/pattern-dpsdmarker.patt">
-                    <a-image src="        " positions="0 1 0" rotation="0 180 0"></a-image>
-                    <a-text value="       " positions="1 2 0 "></a-text>
+             
+                    <a-marker preset="mymarker" type="pattern" url="./assets/dpsd19105.patt">
+                    <a-image src="./assets/250941126_10220912323146818_1870325781860952887_n        .png" positions="1 0 0" rotation="0 0 180"></a-image>
+                    <a-text value="dpavliotis" positions="1 2 3 "></a-text>
                     </a-marker>
 
-                    <!-- oxygrEn -->
-                    <a-marker id="markerO" type='pattern' url="./assets/pattern-card-O.patt">
-                    <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" 
-                              position="0 0 0" 
-                              material="color: blue" 
-                              animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
-                    </a-entity>
+        
+                    <a-marker id="oxygen" type='pattern' url="./assets/pattern-card-O.patt">
+                        <a-entity gltf-model="#edw" scale= "2 2 2"  position="0 1 0"    animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" ></a-entity>></a-entity>
                     </a-marker> 
 
-                    <!-- hydrogEn -->
-                    <a-marker id="markerH" type='pattern' url="./assets/hydrogen.patt">
-                    <a-entity geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5"
-                              position="0 0 0"  
-                              material="color: gold" 
-                              animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
-                    </a-entity>
+                    
+                    <a-marker id="hydrogen" type='pattern' url="./assets/pattern-card-H.patt">
+                        <a-entity gltf-model="#ekei" scale= "2 2 2"  position="0 1 0" animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
+
+                        </a-entity> ></a-entity>
+                        
                     </a-marker> 
 
                 
@@ -70,3 +65,4 @@
         </a-scene>
     </body>
 </html>
+
