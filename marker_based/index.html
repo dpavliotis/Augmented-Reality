@@ -1,3 +1,4 @@
+<!-- Deliverable 1-->
 <!DOCTYPE html>
 <html>
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
@@ -11,16 +12,15 @@
     <!-- speech command component -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
     <script src="build/aframe-speech-command-component.js"></script> 
-     <body style="margin : 0px; overflow: hidden;">
-     <a-scene  vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" 
-     embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
+    
 
-    1st derivelable  
-            
-            
-            
-         <a-entity id="annyang" annyang-speech-recognition></a-entity>
-         <a-entity id="switch" 
+    <body style="margin : 0px; overflow: hidden;">
+
+        <a-scene  vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"  embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
+
+            <a-entity id="annyang" annyang-speech-recognition></a-entity>
+
+            <a-entity id="switch" 
                 speech-command__start="command: start; type: attribute; attribute: visible; targetElement: snow; value: true;"
                 speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
             </a-entity>
@@ -32,35 +32,36 @@
                 <a-entity id="cylinder" geometry="primitive: cylinder; height: 0.4; radius:0.1" position="1 0.75 -0.3"  material="color: #FFC65D"></a-entity>    
             </a-marker>
 
-            <a-entity camera></a-entity>
+          <!-- Deliverable 2-->
+           
+           <a-marker-camera type='pattern' url='Assets/pattern-DPSD.patt'>              
+           <a-entity rotation="-90 0 90" position="0 0 0" >
+           <a-text value="            " align="center" position="0 5 0" side="double" ></a-text>
+           <a-text value="             " align="center" position="0 4 0" side="double"></a-text>
+           <a-image src="Assets/chungus.png" position="0 0.5 0" side="double" width="1" height="1"></a-image>
+           </a-marker-camera>
+
+
          
+           <a-assets>
+           <a-asset-item id="hydro" src="Assets/hydrogen.gltf"></a-asset-item>
+           </a-assets>
+           <a-marker type='pattern' url='Assets/pattern-card-H.patt'>
+           <a-entity gltf-model="#hydro" scale= "0.2 0.2 0.2";></a-entity>
+           </a-marker>
+
+
          
-     2nd deliverable
+           <a-assets>
+           <a-asset-item id="oxy" src="Assets/oxygen.gltf"></a-asset-item>
+           </a-assets>
+           <a-marker type='pattern' url='Assets/pattern-card-O.patt'>
+           <a-entity gltf-model="#oxy" scale= "0.5 0.5 0.5";></a-entity>
+           </a-marker>
+            
+            
      
-             
-                    <a-marker preset="mymarker" type="pattern" url="./assets/dpsd19105.patt">
-                    <a-image src="./assets/250941126_10220912323146818_1870325781860952887_n        .png" positions="1 0 0" rotation="0 0 180"></a-image>
-                    <a-text value="dpavliotis" positions="1 2 3 "></a-text>
-                    </a-marker>
-
-        
-                    <a-marker id="oxygen" type='pattern' url="./assets/pattern-card-O.patt">
-                        <a-entity gltf-model="#edw" scale= "2 2 2"  position="0 1 0"    animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" ></a-entity>></a-entity>
-                    </a-marker> 
-
-                    
-                    <a-marker id="hydrogen" type='pattern' url="./assets/pattern-card-H.patt">
-                        <a-entity gltf-model="#ekei" scale= "2 2 2"  position="0 1 0" animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;" >
-
-                        </a-entity> ></a-entity>
-                        
-                    </a-marker> 
-
-                
-
-
-<a-entity camera></a-entity>
-</a-scene>
+            <a-entity camera></a-entity>
 
         </a-scene>
     </body>
