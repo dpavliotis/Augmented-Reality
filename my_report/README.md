@@ -31,7 +31,7 @@ link για το animation : https://aframe.io/docs/1.3.0/guides/building-a-basi
 Έψαξα στο  Sketchfab και βρήκα ένα 3d model του Παρθενωνα που μου άρεσε,εκανα download το μοντέλο σαν .gltf αρχείο για να μπορώ να το περάσω στο github στο φακελο assets και στον κώδικα. Βρήκα στο Wikipedia καποιες πληροφορίες που ήθελα να εμφανίζονται στο text του 3D μοντέλου
 Αλλαξα λιγο τον κωδικα ωστε η εικονα να εχει σωστο μεγεθος και να φαίνεται κάτω από αυτητο text.
 
-Για το syros.html εκανα download μια εικονα του δημαρχειου σε png και την εβαλα στο  φάκελο assets/magnemite στο location_based.
+ Για το syros.html εκανα download μια εικονα του δημαρχειου σε png και την εβαλα στο  φάκελο assets/magnemite στο location_based.
 Τελος έφτιαξα τον κώδικα για να ανοίγει το syros.html και να εμφανίζεται η εικόνα που εχω βαλει.
 # Conclusions
 
